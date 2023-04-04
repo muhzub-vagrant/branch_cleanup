@@ -1,7 +1,7 @@
 pipeline {
     properties([
         parameters([
-        string(name: 'GIT_URL', description: 'Git URL to cleanup branches')
+            string(name: 'GIT_URL', description: 'Git URL to cleanup branches')
         ])
     ])
 
