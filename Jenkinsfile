@@ -1,10 +1,6 @@
 pipeline {
     agent any
-    properties([
-        parameters([
-            string(defaultValue: 'Null', name: 'GIT_URL')
-        ])
-    ])
+    properties([parameters([string(defaultValue: 'Null', name: 'GIT_URL')])])
 
 
     stages {
