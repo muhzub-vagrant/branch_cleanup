@@ -1,7 +1,9 @@
 pipeline {
-    parameters {
+    properties([
+        parameters([
         string(name: 'GIT_URL', description: 'Git URL to cleanup branches')
-    }
+        ])
+    ])
 
     stages {
 
