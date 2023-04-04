@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters{
-        string(name: 'GIT_URL', value: '', description: 'Git URL to cleanup branches')
+        string(name: "GIT_URL", value: '', description: 'Git URL to cleanup branches')
     }
 
 
