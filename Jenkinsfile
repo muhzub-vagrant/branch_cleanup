@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    properties([parameters([string(defaultValue : 'Null', name : 'GIT_URL')])])
-
-
+    def GIT_URL: 'git@github.com:muhzub-vagrant/old_feature_branch_testing.git'
     stages {
 
         stage('Cleanup Merged Branches') {
