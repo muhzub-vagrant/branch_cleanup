@@ -20,7 +20,7 @@ pipeline {
             //         git branch --merged | grep -v '^*\\|master\\|main\\|develop' | while read branch; do
             //             branch_age=\$(expr \$(date +%s) - \$(git log -1 --pretty=format:'%ct' \$branch))
             //             if [ \$branch_age -gt \$((365 * 2 * 24 * 60 * 60)) ]; then
-            //                 echo "Deleting merged branch \${branch} (age: \$((\$branch_age / 86400)) days)"
+            //                 echo "Deleting merged branch \${branch} (age \$((\$branch_age / 86400)) days)"
             //                 git branch -D \${branch}
             //             elif [ \$branch_age -gt \$((60 * 24 * 60 * 60)) ]; then
             //                 echo "Moving merged branch \${branch} to head reference (age: \$((\$branch_age / 86400)) days)"
@@ -36,7 +36,7 @@ pipeline {
             //             branch_age=\$(expr \$(date +%s) - \$commit_time)
             //             if [ \$branch_age -gt \$((60 * 24 * 60 * 60)) ]; then
             //                 if ! git merge-base --is-ancestor \${branch} master >/dev/null 2>&1; then
-            //                     echo "Deleting unmerged branch \${branch} (age: \$((\$branch_age / 86400)) days)"
+            //                     echo "Deleting unmerged branch \${branch} (age \$((\$branch_age / 86400)) days)"
             //                     git branch -D \${branch}
             //                 fi
             //             fi
