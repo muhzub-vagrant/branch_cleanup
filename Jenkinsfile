@@ -23,7 +23,7 @@ pipeline {
             //                 echo "Deleting merged branch \${branch} (age \$((\$branch_age / 86400)) days)"
             //                 git branch -D \${branch}
             //             elif [ \$branch_age -gt \$((60 * 24 * 60 * 60)) ]; then
-            //                 echo "Moving merged branch \${branch} to head reference (age: \$((\$branch_age / 86400)) days)"
+            //                 echo "Moving merged branch \${branch} to head reference (age \$((\$branch_age / 86400)) days)"
             //                 git branch -M \${branch} refs/heads/merged/\${branch}
             //             fi
             //         done
